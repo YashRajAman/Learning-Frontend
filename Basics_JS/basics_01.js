@@ -51,3 +51,19 @@ console.log(st1 + st2)
 /* true/false or truthy or flasy */
 
 
+// scope //
+/*
+    local and global
+    local or block scope is of loop/function/conditional statements/block  for let and const
+    local is given preference
+*/
+if  (true){
+    let a = 12;           // scoped to if
+    const c = 1343;       // scoped to if
+    var s = 12323232;     // scoped to global
+}
+
+
+// console.log(a) // gives error
+// console.log(c) // gives error
+console.log(s) // gives resuts due to global scope of var
