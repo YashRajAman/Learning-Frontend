@@ -111,13 +111,17 @@ console.log(myName)
 
 
 */
-console.log(justavar)
+// console.log(justavar)
 
 
-let justavar = "yash raj aman"
+// let justavar = "yash raj aman"
 
 
 
 function myfun(){
     console.log("cha baju hat.")
+}
+
+for (const key in user){
+    console.log(key)
 }

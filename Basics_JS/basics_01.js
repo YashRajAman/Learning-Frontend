@@ -23,9 +23,9 @@ Uncaught ReferenceError: Cannot access 'f' before initialization
 
 
 
-console.log(username)
+// console.log(username)
 
-console.table([accountId, username, pass, city])
+// console.table([accountId, username, pass, city])
 
 /*
 DATA TYPES IN JS
@@ -45,7 +45,7 @@ bigint
 let st1 = "Yash "
 let st2 = "Raj"
 
-console.log(st1 + st2)
+// console.log(st1 + st2)
 
 ///// comparisons //////
 /* true/false or truthy or flasy */
@@ -66,4 +66,36 @@ if  (true){
 
 // console.log(a) // gives error
 // console.log(c) // gives error
-console.log(s) // gives resuts due to global scope of var
+// console.log(s) // gives resuts due to global scope of var
+
+
+// map type similar to dictionary in python or hash map in java
+
+const map = new Map()
+
+map.set(1, "One")
+map.set(2, 'Two')
+map.set(3, 'Three')
+
+// console.log(map)
+
+
+for (const[key, value] of map){
+    // console.log(key, value)
+}
+
+
+let variable = [1,2,3,4,5,65]
+
+for ( x in variable){
+    // console.log(x)  // gives index
+}
+
+
+variable.forEach(console.log)
+
+variable.forEach( function (x) {console.log(x)})
+
+variable.forEach((x)=>{console.log(x)})
+
+

@@ -3,15 +3,15 @@ function sumit(x, y){
     return x+y
 }
 
-console.log("Add of 3 and 7 is "+sumit(3,7))
+// console.log("Add of 3 and 7 is "+sumit(3,7))
 
 function sayHi(name="Unknown"){   // default param
     console.log(`Hello, ${name}`)
 }
 
-sayHi()
+// sayHi()
 
-sayHi("Yash")
+// sayHi("Yash")
 
 
 const slip = {
@@ -31,10 +31,10 @@ function increaseRateBy2folds(obj){
     }
 }
 
-console.log(increaseRateBy2folds(slip))
+// console.log(increaseRateBy2folds(slip))
 
 // inner function 
-console.log("=========================================================")
+// console.log("=========================================================")
 function first(){
     const username = "Aman"
 
@@ -48,7 +48,7 @@ function first(){
 
 }
 
-first()
+// first()
 
 
 /* 'this' is a global object which denotes the global namespace or object namespace in code environment.
@@ -64,4 +64,29 @@ const abc = (x, y) => {
 }
 
 const bca = (x,y) => x+y //implicit return
+
+// immediately executed function expression IEFE
+// a semicolon is required to init the context and end the context
+
+;  // if this is removed then my Funbegins1 will not be executed and myFunbegins2 will be executed
+(function myFunbegins1() {
+    console.log("Nikal yaha se......");
+})();
+
+
+
+
+(function myFunbegins2(){
+    console.log("Nikal yaha se.")
+})();   // semocolon is required to end the contex, else will throw error on next instruction
+
+
+// (() => {
+//     console.log("Hello arrows")
+// })();  // // semocolon is required to end the contex, else will throw error on next instruction 
+
+// ((name) => {
+//     console.log(`Hello ${name}`)
+// })('Shyam')
+
 
